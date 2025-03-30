@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='bistro',
-    version='__version__ = '1.0.20221230',
+    version='1.0.20221230',
     packages=find_packages(),
     install_requires=[
         'pandas',
