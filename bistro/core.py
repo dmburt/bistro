@@ -1,7 +1,3 @@
-import pandas as pd
-
-
-
 
 
 class BModel:
@@ -12,7 +8,8 @@ class BModel:
         Test if dataset is of type xarray Dataset.  If the dataset is pandas, convert to xarray Dataset.
         If the dataset is not of a supported type, throw error.
         '''
-        accepted_dataset_types = {'pandas DataFrame': pd.core.frame.DataFrame,
+        accepted_dataset_types = {#'pandas DataFrame': pd.core.frame.DataFrame,
+                                  'pandas DataFrame': pd.DataFrame,
                                   'xarray Dataset': xr.core.dataset.Dataset
                                  }
 
