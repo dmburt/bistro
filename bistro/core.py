@@ -1,4 +1,8 @@
 from . import __version__
+import numpy as np
+import pandas as pd
+import xarray as xr
+
 
 class BModel:
 
@@ -8,8 +12,7 @@ class BModel:
         Test if dataset is of type xarray Dataset.  If the dataset is pandas, convert to xarray Dataset.
         If the dataset is not of a supported type, throw error.
         '''
-        import pandas as pd
-        import xarray as xr
+        
         accepted_dataset_types = {'pandas DataFrame': pd.core.frame.DataFrame,
                                   'xarray Dataset': xr.core.dataset.Dataset
                                  }
