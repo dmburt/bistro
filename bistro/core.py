@@ -9,8 +9,8 @@ class BModel:
         If the dataset is not of a supported type, throw error.
         '''
         import pandas as pd
-        accepted_dataset_types = {#'pandas DataFrame': pd.core.frame.DataFrame,
-                                  'pandas DataFrame': pd.DataFrame,
+        import xarray as xr
+        accepted_dataset_types = {'pandas DataFrame': pd.core.frame.DataFrame,
                                   'xarray Dataset': xr.core.dataset.Dataset
                                  }
 
