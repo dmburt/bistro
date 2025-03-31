@@ -27,3 +27,6 @@ from matplotlib import pyplot as plt
 from matplotlib.ticker import PercentFormatter
 from matplotlib.ticker import MaxNLocator
 from matplotlib import rcParams
+
+# local bistro functionality
+from .core import BModel 
